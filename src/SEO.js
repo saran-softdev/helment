@@ -89,6 +89,10 @@ const COMMON_META_TAGS = {
   },
   fb: {
     app_id: "ID_APP_FACEBOOK"
+  },
+  youtube: {
+    channel: "CHANNEL_ID",
+    video: "VIDEO_ID"
   }
 };
 
@@ -98,7 +102,8 @@ const SEO = () => {
   const mergedSEO = {
     ...seo,
     twitter: { ...COMMON_META_TAGS.twitter, ...seo.twitter },
-    fb: { ...COMMON_META_TAGS.fb, ...seo.fb }
+    fb: { ...COMMON_META_TAGS.fb, ...seo.fb },
+    youtube: { ...COMMON_META_TAGS.youtube, ...seo.youtube }
   };
 
   return (
@@ -123,6 +128,8 @@ const SEO = () => {
       <meta property="og:locale" content={mergedSEO.og.locale} />
       <meta property="og:type" content={mergedSEO.og.type} />
       <meta property="fb:app_id" content={mergedSEO.fb.app_id} />
+      <meta property="youtube:channel" content={mergedSEO.youtube.channel} />
+      <meta property="youtube:video" content={mergedSEO.youtube.video} />
       <link rel="canonical" href={mergedSEO.canonical} />
       <meta name="robots" content={mergedSEO.robots} />
       <meta name="author" content={mergedSEO.author} />
