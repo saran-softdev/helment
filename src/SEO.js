@@ -108,32 +108,32 @@ const SEO = () => {
 
   return (
     <Helmet>
-      <title>{mergedSEO.title}</title>
-      <meta name="description" content={mergedSEO.description} />
-      <meta name="keywords" content={mergedSEO.keywords} />
-      <meta name="twitter:card" content={mergedSEO.twitter.card} />
-      <meta name="twitter:site" content={mergedSEO.twitter.site} />
-      <meta name="twitter:creator" content={mergedSEO.twitter.creator} />
-      <meta name="twitter:title" content={mergedSEO.twitter.title} />
+      <title>{mergedSEO?.title}</title>
+      <meta name="description" content={mergedSEO?.description} />
+      <meta name="keywords" content={mergedSEO?.keywords} />
+      <meta name="twitter:card" content={mergedSEO?.twitter?.card} />
+      <meta name="twitter:site" content={mergedSEO?.twitter?.site} />
+      <meta name="twitter:creator" content={mergedSEO?.twitter?.creator} />
+      <meta name="twitter:title" content={mergedSEO?.twitter?.title} />
       <meta
         name="twitter:description"
-        content={mergedSEO.twitter.description}
+        content={mergedSEO?.twitter?.description}
       />
-      <meta name="twitter:image" content={mergedSEO.twitter.image} />
-      <meta property="og:title" content={mergedSEO.og.title} />
-      <meta property="og:description" content={mergedSEO.og.description} />
-      <meta property="og:image" content={mergedSEO.og.image} />
-      <meta property="og:url" content={mergedSEO.og.url} />
-      <meta property="og:site_name" content={mergedSEO.og.site_name} />
-      <meta property="og:locale" content={mergedSEO.og.locale} />
-      <meta property="og:type" content={mergedSEO.og.type} />
-      <meta property="fb:app_id" content={mergedSEO.fb.app_id} />
-      <meta property="youtube:channel" content={mergedSEO.youtube.channel} />
-      <meta property="youtube:video" content={mergedSEO.youtube.video} />
-      <link rel="canonical" href={mergedSEO.canonical} />
-      <meta name="robots" content={mergedSEO.robots} />
-      <meta name="author" content={mergedSEO.author} />
-      <meta name="publisher" content={mergedSEO.publisher} />
+      <meta name="twitter:image" content={mergedSEO?.twitter?.image} />
+      <meta property="og:title" content={mergedSEO?.og?.title} />
+      <meta property="og:description" content={mergedSEO?.og?.description} />
+      <meta property="og:image" content={mergedSEO?.og?.image} />
+      <meta property="og:url" content={mergedSEO?.og?.url} />
+      <meta property="og:site_name" content={mergedSEO?.og?.site_name} />
+      <meta property="og:locale" content={mergedSEO?.og?.locale} />
+      <meta property="og:type" content={mergedSEO?.og?.type} />
+      <meta property="fb:app_id" content={mergedSEO?.fb?.app_id} />
+      <meta property="youtube:channel" content={mergedSEO?.youtube?.channel} />
+      <meta property="youtube:video" content={mergedSEO?.youtube?.video} />
+      <link rel="canonical" href={mergedSEO?.canonical} />
+      <meta name="robots" content={mergedSEO?.robots} />
+      <meta name="author" content={mergedSEO?.author} />
+      <meta name="publisher" content={mergedSEO?.publisher} />
     </Helmet>
   );
 };
